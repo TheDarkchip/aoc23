@@ -42,7 +42,13 @@ pub fn part_two(input: &str) -> Option<u32> {
         .collect();
     let rev_regex_pattern = format!(r"({})|\d", rev_number_words.join("|"));
     let reg_rev = Regex::new(&rev_regex_pattern).unwrap();
-
+    /*
+     * As we care about the first and last match from our line,
+     * we can't use find_iter as it doesn't support overlapping matches.
+     * Instead, we reverse the regex number word pattern and the input line
+     * and use find once with the normal regex pattern, and once with the
+     * reversed pattern.
+     */
     input
         .lines()
         .filter_map(|line| {
