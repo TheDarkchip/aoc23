@@ -1,10 +1,5 @@
 {
     "name": "rust-devcontainer",
     "image": "mcr.microsoft.com/devcontainers/rust:latest",
-    "postCreateCommand": "rustc --version",
-    "runArgs": [
-        "--userns=keep-id:uid=1000,gid=1000"
-    ],
-    "containerUser": "vscode",
-    "updateRemoteUserUID": true
+    "postCreateCommand": "rustc --version"
 }
