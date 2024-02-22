@@ -7,10 +7,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
-    permissions:
-      contents: write
-      pull-requests: write
-      workflows: write
+
 
     steps:
       # To use this repository's private action, you must check out the repository
