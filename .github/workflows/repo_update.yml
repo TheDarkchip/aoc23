@@ -24,6 +24,6 @@ jobs:
         uses: AndreasAugustin/actions-template-sync@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_repo_path: <owner/repo>
+          source_repo_path: fspoettel/advent-of-code-rust
           upstream_branch: <target_branch> # defaults to main
           pr_labels: <label1>,<label2>[,...] # defaults to template_sync
