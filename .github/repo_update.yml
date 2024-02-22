@@ -1,3 +1,5 @@
+name: Repo Update
+
 on:
   push:
   workflow_dispatch:
